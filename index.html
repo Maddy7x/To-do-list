@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Quattrocento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: gray url("bg.jpg") no-repeat center;
+            background-size: cover;
+            font-family: 'Quattrocento', serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+        }
+        button {
+            font-family: 'Bubblegum Sans', cursive;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 0.5rem;
+            border: 3px solid pink;
+            background-color: rgba(247, 8, 47, 0.5);
+            border-radius: 8px;
+            margin-bottom: 0.3rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgba(247, 8, 48, 0.3);
+            transition: ease-in-out 0.3s;
+        }
+        div {
+            text-align: center;
+        }
+        input {
+            background-color: rgba(233, 150, 122, 0.575);
+            border: none;
+            box-shadow: inset 4px 2px 4px rgba(0, 0, 0, 0.39);
+            height: 1.5rem;
+            font-family: 'Quattrocento', serif;
+            font-size: 1.2rem;
+            padding: 0.3rem;
+        }
+        li {
+            padding: 0.3rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            /*text-decoration: line-through;
+            color: gray;*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>To-do-list</h1>
+    
+    <div>
+        <button id="btn_1">Add Task</button>
+        <button id="btn_2">Clear List</button><br>
+        <input id="input"><br>
+        <ul id="list"></ul>
+    </div>
+
+    <canvas id="MyCanvas"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>
