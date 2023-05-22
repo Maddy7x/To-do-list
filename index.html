@@ -61,16 +61,19 @@
     </style>
 </head>
 <body>
-    <h1>To-do-list</h1>
-    
-    <div>
-        <button id="btn_1">Add Task</button>
-        <button id="btn_2">Clear List</button><br>
-        <input id="input"><br>
-        <ul id="list"></ul>
-    </div>
-
-    <canvas id="MyCanvas"></canvas>
+    <main class="my-todo-app">
+        <article data-js-app>
+            <h1>To-do-list</h1>
+            
+            <div>
+                <button data-js-btn="add">Add Task</button>
+                <button data-js-btn="clear">Clear List</button><br>
+                <input id="input"><br>
+                <ul data-js-list></ul>
+            </div>
+        </article>
+        
+    </main>
     
     <script src="script.js"></script>
 </body>
