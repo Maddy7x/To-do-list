@@ -1,17 +1,13 @@
 window.addEventListener("load", function () {
-    const canvas = document.getElementById("MyCanvas");
-    const ctx = canvas.getContext("2d");
-
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-    const height = canvas.height;
-    const width = canvas.width;
-
     const Tasks = {
-        addButton: document.getElementById("btn_1"),
-        clearButton: document.getElementById("btn_2"),
-        inputField: document.getElementById("input"),
-        list: document.getElementById("list"),
+        app: document.querySelector('[data-js-app]'),
+
+        init: function () {
+            this.addButton = this.app.querySelector('[data-js-btn="add"]');
+            this.clearButton = this.app.querySelector('[data-js-btn="clear"]');
+            this.list = this.app.querySelector('[data-js-list]');
+            this.inputField = this.app.querySelector("input");
+        },
 
         newElement: function (input) {
             let newTask = document.createElement("li");
@@ -41,6 +37,7 @@ window.addEventListener("load", function () {
             };
         }
     };
+    Tasks.init();
     
     
     Tasks.addButton.addEventListener("click", function() {
